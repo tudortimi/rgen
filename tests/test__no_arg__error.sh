@@ -13,7 +13,9 @@ fi
 cat < $error >&2
 
 if ! grep -q "too few arguments" $error; then
-    exit 1
+    if ! grep -q "the following arguments are required" $error; then
+	exit 1
+    fi
 fi
 
 exit 0
