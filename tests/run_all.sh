@@ -20,3 +20,5 @@ if [[ "$status" == 0 ]]; then
 else
     echo "Status is FAILED"
 fi
+
+exit $status
