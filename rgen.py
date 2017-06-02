@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.7
+#!/usr/bin/env python
 
 import sys
 sys.path.append('dependencies/ipyxact')
@@ -12,7 +12,7 @@ from mako.runtime import Context
 
 
 parser = argparse.ArgumentParser(description='Generate registers')
-parser.add_argument('xml_path', metavar='<xml>', type=file, nargs=1,
+parser.add_argument('xml_path', metavar='<xml>', type=argparse.FileType('r'), nargs=1,
                     help='path to IP-XACT XML file to be read')
 args = parser.parse_args()
 
