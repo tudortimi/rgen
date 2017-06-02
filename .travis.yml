@@ -16,8 +16,8 @@ after_script:
 
 matrix:
   allow_failures:
-    - python: 3.2
-    - python: 3.3
-    - python: 3.4
-    - python: 3.5
-    - python: 3.6
+    - python: "3.2"
+    - python: "3.3"
+    - python: "3.4"
+    - python: "3.5"
+    - python: "3.6"
