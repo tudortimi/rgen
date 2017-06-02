@@ -8,4 +8,16 @@ python:
   - "3.5"
   - "3.6"
 
-script: echo "Testing"
+script:
+  cd tests; ./run_all.sh
+
+after_script:
+  pwd; curl -sT logs/test__no_arg__error.sh.log chunk.io
+
+matrix:
+  allow_failures:
+    - python: "3.2"
+    - python: "3.3"
+    - python: "3.4"
+    - python: "3.5"
+    - python: "3.6"
