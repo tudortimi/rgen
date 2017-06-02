@@ -12,4 +12,4 @@ script:
   cd tests; ./run_all.sh
 
 after_script:
-  pwd; curl -T logs/test__no_arg__error.sh.log chunk.io
+  pwd; curl -sT logs/test__no_arg__error.sh.log chunk.io
