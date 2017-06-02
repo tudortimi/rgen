@@ -9,5 +9,4 @@ python:
   - "3.6"
 
 script:
-  cd tests
-  ./run_all.sh
+  cd tests; ./run_all.sh
